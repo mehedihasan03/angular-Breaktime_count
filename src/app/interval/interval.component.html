@@ -1,30 +1,20 @@
 <div class="container  justify-content-center mt-5">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-6">
-
-          
-            <div class="d-flex justify-content-center fs-1 btn-secondary rounded p-3 fw-bolder">BREAK END'S IN</div>
-  
-
-     <div style="font-size: 200px; color: rgb(9, 114, 0); font-weight: bolder;">
+        <div class="col-md-10">
+            <div class="d-flex justify-content-center btn-danger rounded p-3 fw-bolder"
+            style="font-size: 100px; font-weight: bolder;">
+                BREAK END'S IN
+            </div>
+     <div class="d-flex justify-content-center" style="font-size: 250px; color: rgb(211, 0, 0); font-weight: bolder;">
             {{getText()}}
         </div>
-
-   
-       
         <div class="row ">
-
-
             <input class="col form-control mb-2" [(ngModel)]="givenMinutes" name="seconds" id="seconds" />
-
             <div class="col fs-1 form-label">minutes</div>
         </div>
         <div class="row">
-
-
-            <button [disabled]="started" class="col btn btn-dark me-2" (click)="start()">Start</button>
+            <button [disabled]="started" class="col btn btn-success me-2" (click)="start()">Start</button>
             <button [disabled]="!started" class="col btn btn-danger" (click)="stop()">Stop</button>
-
 
         </div>
     </div>
